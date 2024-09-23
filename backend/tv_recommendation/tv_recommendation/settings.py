@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'tv_recommendation.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Local PostgreSQL',  # Replace with your actual database name
+        'USER': 'yebyyy',              # Your PostgreSQL role
+        'PASSWORD': '8205100',   # Your PostgreSQL password
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
