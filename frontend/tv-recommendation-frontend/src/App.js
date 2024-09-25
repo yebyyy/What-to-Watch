@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/App.css'; // Custom styles for additional tweaks (if needed)
 import Drama from './components/Drama';
 import Comedy from './components/Comedy';
+import ForYou from './components/ForYou';
 function App() {
   return (
     <div className="bg-background min-h-screen flex flex-col items-center">
@@ -19,13 +20,17 @@ function App() {
           Explore a curated list of shows across various genres.
         </p>
 
-        {/* Carousel for TV Show Categories */}
+        {/* For You Carousel */}
+        <div className="mt-8 w-full max-w-6xl">
+          <h3 className="text-2xl font-semibold">For You</h3>
+          <ForYou />
+        </div>
+
         <div className="mt-8 w-full max-w-6xl">
           <h3 className="text-2xl font-semibold">Comedy</h3>
           <Comedy />
         </div>
         
-        {/* Carousel for TV Show Categories */}
         <div className="mt-8 w-full max-w-6xl">
           <h3 className="text-2xl font-semibold">Drama</h3>
           <Drama />
